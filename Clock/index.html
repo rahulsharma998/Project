@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Timing App</h1>
+            <nav>
+                <button id="ClockTab">World Clock</button>
+                <button id="StopwatchTab">Stopwatch</button>
+                <button id="TimerTab">Timer</button>
+                <button id="AlarmTab">Alarm</button>
+            </nav>
+        </header>
+        <main>
+            <section id="ClockSection" class="hidden">
+                <h2>World Clock</h2>
+                <div id="worldClock"></div>
+                <div id="map" style="height: 300px;"></div>
+                <input type="text" id="locationInput" placeholder="Enter city name">
+                <button id="addcity">Add City</button>
+            </section>
+            <section id="StopwatchSection" class="hidden">
+                <h2>Stopwatch</h2>
+                <div id="Stopwatch">00:00:00</div>
+                <button id="startStopwatch">Start</button>
+                <button id="restStopwatch">Reset</button>
+                <div id="laps"></div>
+            </section>
+            <section id="TimerSection" class="hidden">
+                <h2>Timer</h2>
+                <input type="number"  id="timerinput" min="0" placeholder="Set Time">
+                <div id="Timer">00:00:00</div>
+                <button id="startTimer">Start</button>
+                <button id="restTimer">Reset</button>
+            </section>
+            <section id="AlarmSection" class="hidden">
+                <h2>Alarm</h2>
+                <input type="time" id="alarmtime">
+                <button id="setAlarm">Set Alarm</button>
+                <div id="alarms"></div>
+            </section>
+        </main>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

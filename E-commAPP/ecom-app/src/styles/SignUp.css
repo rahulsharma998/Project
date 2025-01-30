@@ -1,0 +1,94 @@
+/* General container for auth pages */
+.auth-container {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Header styles */
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+  }
+  
+  /* Error message styling */
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  /* Input fields */
+  .input-field {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  .input-field:focus {
+    border-color: #4CAF50;
+  }
+  
+  /* SignUp button */
+  .button {
+    width: 100%;
+    padding: 14px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #357a38;
+  }
+  
+  /* Google SignUp button */
+  .google-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #4285F4;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .google-button:hover {
+    background-color: #357AE8;
+  }
+  
+  /* Fade-In Animation */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .auth-container {
+      width: 90%;
+    }
+  }
+  

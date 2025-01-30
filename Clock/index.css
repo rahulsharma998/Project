@@ -1,0 +1,199 @@
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f5f8; /* Light gray background */
+    color: #333;
+    line-height: 1.6;
+}
+
+#app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff; /* White background for the app container */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #4A90E2; /* Blue color for the title */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+nav button {
+    background: linear-gradient(145deg, #4A90E2, #357ABD); /* Gradient blue */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 12px;
+    font-size: 1.1rem;
+    transition: background 0.3s, transform 0.3s ease;
+}
+
+nav button:hover {
+    background: linear-gradient(145deg, #357ABD, #4A90E2);
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Section Visibility */
+.hidden {
+    display: none;
+}
+
+/* World Clock */
+#worldClock {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.clock {
+    background-color: #ffffff; /* White background for each clock */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    min-width: 220px;
+    max-width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.clock h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.clock .time {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4A90E2; /* Blue color for the time */
+}
+
+/* Stopwatch */
+#StopwatchSection, #TimerSection, #AlarmSection {
+    margin-top: 30px;
+}
+
+#Stopwatch, #Timer {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #4A90E2; /* Blue color for stopwatch/timer display */
+}
+
+button {
+    padding: 12px 18px;
+    background-color: #4CAF50; /* Green background for buttons */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Timer */
+#timerinput {
+    padding: 12px;
+    font-size: 1.3rem;
+    margin-right: 10px;
+    width: 180px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+}
+
+#timerinput:focus {
+    border-color: #4A90E2;
+    outline: none;
+}
+
+/* Alarm */
+#alarmtime {
+    font-size: 1.3rem;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 180px;
+}
+
+#alarmtime:focus {
+    border-color: #4A90E2;
+    outline: none;
+}
+
+/* Map Container */
+#map {
+    height: 400px;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+/* Inputs and Buttons */
+input[type="text"], input[type="number"], input[type="time"] {
+    padding: 12px;
+    font-size: 1.2rem;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, input[type="time"]:focus {
+    border-color: #4A90E2;
+    outline: none;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    #app {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav button {
+        font-size: 1rem;
+        margin: 5px;
+    }
+
+    .clock {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    button, input[type="text"], input[type="number"], input[type="time"] {
+        width: 100%;
+    }
+
+    #Stopwatch, #Timer {
+        font-size: 2.5rem;
+    }
+}

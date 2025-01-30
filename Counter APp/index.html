@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="Counterapp">
+        <h1>Counter App</h1>
+        <div id="counter">0</div>
+        <div class="custom-input">
+            <label for="customValue">Enter Value:</label>
+            <input type="number" id="customValue" value="1" min="1">
+        </div>
+        <div class="button-container">
+            <button id="Incre">Increment</button>
+            <button id="decre">Decrement</button>
+            <button id="reset">Reset</button>
+        </div>
+        <button id="voice-control">Start Voice Control</button>
+        <p id="voice-instructions">Say "Increment", "Decrement", or "Reset" after starting voice control.</p>
+        <p id="keyboard-guide">Or you can press "+" ,"-" or "r" for Increment, Decrement or reset.</p>
+        <div id="voice-feedback"></div>
+        <div class="progress-bar-container">
+            <div class="progress-bar" id="progress-bar"></div>
+            <span id="progress-percentage" >0%</span>
+        </div>
+        <div class="custom-input">
+            <label for="maxValueInput">Set Max Value:</label>
+            <input type="number" id="maxValueInput" value="100" min="1">
+        </div>
+        
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
