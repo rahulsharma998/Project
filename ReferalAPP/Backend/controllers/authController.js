@@ -1,10 +1,8 @@
 const User=require("../models/user");
 const bcrypt=require("bcryptjs");
 const jwt=require("jsonwebtoken");
-
 exports.Login=async(req,res)=>{
     const {email,password}=req.body;
-
     try {
         const user=await User.findOne({email});
         if (!user) return res.status(400).json({message:"User not Found"});
